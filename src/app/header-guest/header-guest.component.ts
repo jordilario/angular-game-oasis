@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
+import { HostListener } from "@angular/core";
+
 
 @Component({
   selector: 'app-header-guest',
@@ -9,10 +11,21 @@ export class HeaderGuestComponent implements OnInit {
 
   title = 'Game Oasis';
 
+  scrHeight:any;
+  scrWidth:any;
 
-  constructor() { }
+  @HostListener('window:resize', ['$event'])
+  getScreenSize() {
+    this.scrHeight = window.innerHeight;
+    this.scrWidth = window.innerWidth;
+    console.log(this.scrHeight, this.scrWidth);
+  }
+
+  // Constructor
+  constructor() {
+    this.getScreenSize();
+  }
 
   ngOnInit(): void {
   }
-
 }

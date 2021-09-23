@@ -2,9 +2,25 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+/* export const environment = {
   production: false
-};
+}; */
+let scrWidth = 0;
+
+export const environment_recovery = function () {
+  
+  scrWidth = window.innerWidth;
+
+  return {
+    production:false,
+    scrWidth
+  }
+  
+}
+
+export const environment = environment_recovery();
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
