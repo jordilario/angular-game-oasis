@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+    font-family: "PixelGaming";
+    src: local("PixelGaming"), url(./assets/fonts/Sabo-Regular.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "PixelGamingFilled";
+    src: local("PixelGaming"), url(./assets/fonts/Sabo-Filled.otf) format("truetype");
+}

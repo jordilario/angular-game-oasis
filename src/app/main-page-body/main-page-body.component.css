@@ -1,0 +1,277 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    .medium-body {
+        min-height: 550px;
+        background: #0400ffbe;
+        padding-top: 0%;
+        padding-bottom: 0px;
+    }
+    /*DONE*/
+    .medium-body h1 {
+        padding-top: 50px;
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 50px;
+        font-family: "PixelGaming";
+        line-height: 1;
+    }
+    /*DONE*/
+    .medium-body p {
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-family: "PixelGamingFilled";
+        width: 800px;
+        text-justify: auto;
+        margin-bottom: 50px;
+    }
+    /*DONE*/
+    .middle-page-button {
+        min-width: 230px;
+        min-height: 50px;
+        border-radius: 30px;
+    }
+    /*DONE*/
+    .middle-page-button:hover {
+        background-color: rgb(37, 37, 37);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .middle-page-button:active {
+        background-color: rgb(255, 0, 76);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .button-container {
+        min-width: 100%;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+    /*DONE*/
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .medium-body {
+        min-height: 600px;
+        background: #0400ffbe;
+        padding-top: 0%;
+        padding-bottom: 0px;
+    }
+    .medium-body h1 {
+        padding-top: 50px;
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 50px;
+        font-family: "PixelGaming";
+        line-height: 1;
+    }
+    /*DONE*/
+    .medium-body p {
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-family: "PixelGamingFilled";
+        width: 600px;
+        text-justify: auto;
+        margin-bottom: 50px;
+    }
+    /*DONE*/
+    .middle-page-button {
+        min-width: 210px;
+        min-height: 45px;
+        border-radius: 30px;
+    }
+    /*DONE*/
+    .middle-page-button:hover {
+        background-color: rgb(37, 37, 37);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .middle-page-button:active {
+        background-color: rgb(255, 0, 76);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .button-container {
+        min-width: 100%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    /*DONE*/
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .medium-body {
+        min-height: 750px;
+        background: #0400ffbe;
+        padding-top: 0%;
+        padding-bottom: 0px;
+    }
+    .medium-body h1 {
+        padding-top: 50px;
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 50px;
+        font-family: "PixelGaming";
+        line-height: 1;
+    }
+    /*DONE*/
+    .medium-body p {
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-family: "PixelGamingFilled";
+        width: 450px;
+        text-justify: auto;
+        margin-bottom: 50px;
+    }
+    /*DONE*/
+    .middle-page-button {
+        min-width: 160px;
+        min-height: 40px;
+        border-radius: 30px;
+    }
+    /*DONE*/
+    .middle-page-button:hover {
+        background-color: rgb(37, 37, 37);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .middle-page-button:active {
+        background-color: rgb(255, 0, 76);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .button-container {
+        min-width: 100%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    /*DONE*/
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .medium-body {
+        min-height: 850px;
+        background: #0400ffbe;
+        padding-top: 0%;
+        padding-bottom: 0px;
+    }
+    .medium-body h1 {
+        padding-top: 50px;
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 50px;
+        font-family: "PixelGaming";
+        line-height: 1;
+    }
+    .medium-body p {
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-family: "PixelGamingFilled";
+        width: 350px;
+        text-justify: auto;
+        margin-bottom: 50px;
+    }
+    /*DONE*/
+    .middle-page-button {
+        min-width: 160px;
+        min-height: 40px;
+        border-radius: 30px;
+    }
+    /*DONE*/
+    .middle-page-button:hover {
+        background-color: rgb(37, 37, 37);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .middle-page-button:active {
+        background-color: rgb(255, 0, 76);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .button-container {
+        min-width: 100%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    /*DONE*/
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .medium-body {
+        min-height: 900px;
+        background: #0400ffbe;
+        padding-top: 0%;
+        padding-bottom: 0px;
+    }
+    .medium-body h1 {
+        padding-top: 50px;
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 35px;
+        font-family: "PixelGaming";
+        line-height: 1;
+    }
+    .medium-body p {
+        padding-left: 5%;
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-family: "PixelGamingFilled";
+        width: 300px;
+        text-justify: auto;
+        margin-bottom: 50px;
+    }
+    /*DONE*/
+    .middle-page-button {
+        min-width: 140px;
+        min-height: 35px;
+        border-radius: 30px;
+    }
+    /*DONE*/
+    .middle-page-button:hover {
+        background-color: rgb(37, 37, 37);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .middle-page-button:active {
+        background-color: rgb(255, 0, 76);
+        color: rgb(250, 250, 250);
+    }
+    /*DONE*/
+    .button-container {
+        min-width: 100%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    /*DONE*/
+}
