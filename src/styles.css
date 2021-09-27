@@ -2,7 +2,9 @@
 
 html,
 body {
+    display: block;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,4 +20,8 @@ body {
 @font-face {
     font-family: "PixelGamingFilled";
     src: local("PixelGaming"), url(./assets/fonts/Sabo-Filled.otf) format("truetype");
+}
+
+.mat-drawer-content {
+    overflow-x: hidden !important;
 }

@@ -1,12 +1,44 @@
-.spacer {
-    flex: 1 1 auto;
-}
-
-.mat-toolbar.mat-primary {
-    background: #0400ffbe;
-    color: rgb(224, 224, 224);
-}
-
-.button-header:hover {
-    color: rgb(255, 0, 76);
-}
+    .spacer {
+        flex: 1 1 auto;
+    }
+    
+    .mini-spacer {
+        margin-left: 20px;
+    }
+    
+    .mat-toolbar.mat-primary {
+        background: #0400ffbe;
+        color: rgb(224, 224, 224);
+    }
+    
+    .button-header:hover {
+        color: rgb(255, 0, 76);
+    }
+    
+    .side-nav-stylus {
+        min-width: 200px;
+        padding: 20px;
+    }
+    
+    .closing-button {
+        float: right;
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin: 4px;
+    }
+    
+    .is-active {
+        color: rgb(255, 0, 76);
+        background-color: rgba(43, 43, 43, 0.322)
+    }
+    
+    .is-active-collapsed {
+        border-radius: 20px;
+        color: rgb(255, 0, 76);
+        background-color: rgba(43, 43, 43, 0.048)
+    }
+    
+    .is-active-collapsed:hover {
+        border-radius: inherit !important;
+    }

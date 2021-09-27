@@ -1,12 +1,42 @@
-<div>
-    <mat-toolbar color="primary">
-        <span>{{ title }}</span>
-        <span class="spacer "></span>
-        <button mat-button class="button-header">About us</button>
-        <button mat-button class="button-header">Download</button>
-        <button mat-button class="button-header">Technical support</button>
-        <span class="spacer"></span>
-        <button mat-button class="button-header">Log In</button>
-        <button mat-button class="button-header">Sign Up</button>
-    </mat-toolbar>
-</div>
+<mat-drawer-container class="example-container" autosize [@myAnimationTrigger]="state" [ngStyle]="{'opacity': opacity}">
+    <mat-drawer #drawer class="example-sidenav" mode="side" class="side-nav-stylus">
+        <button (click)="drawer.toggle()" mat-icon-button aria-label="Close button" class="closing-button">
+            <mat-icon>close</mat-icon>
+          </button>
+        <h2>{{ title }}</h2>
+        <mat-divider></mat-divider>
+        <mat-nav-list>
+            <a mat-list-item routerLink="{{ link.url }}" [routerLinkActive]="['is-active-collapsed']" *ngFor="let link of links"> {{ link.name }} </a>
+        </mat-nav-list>
+        <mat-divider></mat-divider>
+        <mat-nav-list>
+            <a mat-list-item routerLink="{{ link.url }}" [routerLinkActive]="['is-active-collapsed']" *ngFor="let link of links_form"> {{ link.name }} </a>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <div>
+        <mat-toolbar color="primary">
+            <div *ngIf="collapsed">
+                <button mat-icon-button class="button-header" (click)="drawer.toggle()" aria-label="Open menu">
+                <mat-icon>menu</mat-icon>
+              </button>
+                <span class="mini-spacer"></span>
+            </div>
+
+            <span>{{ title }}</span>
+
+            <span class="spacer" *ngIf="!collapsed"></span>
+            <button mat-button class="button-header" [routerLink]="['/home']" [routerLinkActive]="['is-active']" *ngIf="!collapsed">Home</button>
+            <button mat-button class="button-header" [routerLink]="['/about-us']" [routerLinkActive]="['is-active']" *ngIf="!collapsed">About us</button>
+            <button mat-button class="button-header" [routerLink]="['/download']" [routerLinkActive]="['is-active']" *ngIf="!collapsed">Download</button>
+            <button mat-button class="button-header" [routerLink]="['/technical-support']" [routerLinkActive]="['is-active']" *ngIf="!collapsed">Technical support</button>
+            <span class="spacer" *ngIf="!collapsed"></span>
+            <button mat-button class="button-header" [routerLink]="['/login']" [routerLinkActive]="['is-active']" *ngIf="!collapsed">Log In</button>
+            <button mat-button class="button-header" [routerLink]="['/signup']" [routerLinkActive]="['is-active']" *ngIf="!collapsed">Sign Up</button>
+
+        </mat-toolbar>
+    </div>
+
+    <app-main-page-body></app-main-page-body>
+
+</mat-drawer-container>
